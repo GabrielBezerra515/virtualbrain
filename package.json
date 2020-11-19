@@ -1,17 +1,31 @@
 {
   "name": "web",
   "version": "1.0.0",
-  "description": "",
+  "engines": {
+    "node": "12"
+  },
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielBezerra515/virtualbrain.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/GabrielBezerra515/virtualbrain/issues"
+  },
+  "homepage": "https://github.com/GabrielBezerra515/virtualbrain#readme",
+  "description": ""
 }

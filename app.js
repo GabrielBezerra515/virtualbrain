@@ -1,5 +1,9 @@
 const express = require('express');
 const app = express();
+
+const cors = require("cors");
+const msg = "Running"
+
 const path = require('path');
 const bodyParse = require('body-parser');
 
@@ -10,6 +14,13 @@ app.use(bodyParse.json())
 // ---------------------------------------------------------------------------------------------
 
 app.use(express.static('public'));
+app.use(cors());
+
+app.get("/api", (_, res) => 
+    res.json({
+        data:msg,
+    })
+);
 
 app.get('/', function(req,res){
     res.sendFile(path.join(__dirname, './public', 'index.html'));
@@ -27,4 +38,4 @@ app.get('/maquinas', function(req,res){
     res.sendFile(path.join(__dirname, './public', 'maquinas-dashboard.html'));
 });
 
-app.listen(9090);
+app.listen(process.env.PORT || 3333, () => console.log(msg));
