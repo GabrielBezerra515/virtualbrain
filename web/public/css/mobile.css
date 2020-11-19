@@ -1,0 +1,115 @@
+@media(max-width:600px){
+    section{
+        width:auto;
+        height: auto;
+   
+    }
+
+    #AreaHome{
+        flex-direction: column;
+    }
+
+    #AreaSobre{
+      
+        flex-direction: column;
+    }
+
+    .ItemArea{
+        width: 100%;
+    }
+
+    #menuIcone{
+        display: block;
+    }
+
+    .itemMenu{
+        position: absolute;
+        top: 80px;
+        width: 90%;
+        left: 5%;
+        background: white;
+        box-sizing: border-box;
+        padding: 10px;
+        box-shadow: 0 15px 20px 0 rgba(88,91,96,.1);
+        /* display: none; */
+        
+    }
+
+    .itemMenu ul li{
+        display: block;
+        padding: 10px;
+    }
+
+   
+    
+    #TextoArea h1{
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #caixaTextoSobre h1{
+        font-size: 25px;
+        width: 100%;
+    }
+
+    #TextoArea h3{
+        font-size: 17px;
+    }
+
+    #menuIcone{
+        display: block;
+        cursor: pointer;
+    }
+
+    #Acessar{
+        display: none;
+    }
+
+    #AcessarMenu{
+        display: block;
+    }
+
+    
+
+    .displayNone{
+        display: none;
+    }
+
+    
+    #divServicos{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .caixasServicos{
+        width: 80%;
+    }
+
+    .displayBlock{
+        display: block;
+    }
+
+    #QuadradoSobre{
+        width: 100%;
+    }
+
+    #ImgSobre{
+        width: 100%;
+    }
+
+    footer{
+        height: 400px;
+        flex-direction: column;
+    }
+
+    footer #esquerdo, footer #direito{
+        width: 100%;
+    }
+
+    .iconeRede{
+        width:80px;
+        height: 80px;
+    }
+    
+}

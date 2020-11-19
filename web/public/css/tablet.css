@@ -1,0 +1,82 @@
+@media(min-width:600px) and (max-width:992px){
+    section{
+        width:auto;
+        height: auto;
+       
+    }
+
+    #AreaHome{
+        flex-direction: column;
+   
+        
+    }
+    .ItemArea{
+        width: 100%;
+    }
+
+    #AreaSobre{
+        flex-direction: column;
+    }
+
+    
+
+    #menuIcone{
+        display: block;
+        cursor: pointer;
+    }
+
+    .itemMenu{
+        position: absolute;
+        top: 80px;
+        width: 90%;
+        left: 5%;
+        background: white;
+        box-sizing: border-box;
+        padding: 10px;
+        box-shadow: 0 15px 20px 0 rgba(88,91,96,.1);
+        cursor: pointer;
+        /* display: none; */
+        
+    }
+
+    .itemMenu ul li{
+        display: block;
+        padding: 10px;
+    }
+
+
+    #divServicos{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .caixasServicos{
+        width: 80%;
+    }
+
+    .displayNone{
+        display: none;
+    }
+
+    #Acessar{
+        display: none;
+    }
+
+    #AcessarMenu{
+        display: block;
+    }
+
+    
+    .displayBlock{
+        display: block;
+    }
+
+    
+   
+
+
+   
+    
+}
+

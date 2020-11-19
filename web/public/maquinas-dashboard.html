@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css-dashboard/style.css">
+    <link rel="stylesheet" href="./css-dashboard/maquinas.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav>
+        <div id="menu">
+            <div id="logo">
+                <img src="imagens-dashboard/nl_branco_dg_cinza.png" alt="">
+                <p>Virtual Brain</p>
+                <div>
+
+                    <div id="itensMenu">
+                        <ul>
+                            <li>
+                                <i class="material-icons icon_nav">dashboard</i>
+                                <a href="/dashboard">Dashboard </a></li>
+
+                            <li>
+                                <i class="material-icons icon_nav">computer</i> Máquinas
+                            </li>
+
+                            <!-- <li><i class="material-icons icon_nav">settings</i>Configurações</li> -->
+                            <li><i class="material-icons icon_nav">logout</i><a href="/login">Sair</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+    </nav>
+
+    <div id="AreaPrincipalDash">
+        <div id="AreaSuperiorDash">
+            <div>
+                <p id="TituloDash">Máquinas</p>
+                <p id="SubtituloDash">Acesso a todas as máquinas do grupo</p>
+            </div>
+
+            <p>
+                <select name="Grupo" id="selecionaSetor">
+                    <option value="">Grupo 1</option>
+                    <option value="">Grupo 2</option>
+                </select>
+            </p>
+
+        </div>
+
+        <div id="CorpoMaquinas">
+            <div class="Computador">
+                <div id="fotoMaquina">
+                    <img src="imagens-dashboard/desktop.png" alt="">
+                </div>
+
+                <div id="informacoes">
+                    <p>Nome da máquina:Digital01</p>
+                    <p>Status: Ligada<i class="material-icons On_of">power_settings_new</i></p>
+                </div>
+
+                <div class="botaoVermais" onclick="abreModal()"><i class="material-icons buttonSeeMore">poll</i>Ver mais
+                </div>
+            </div>
+            <div class="Computador">
+                <div id="fotoMaquina">
+                    <img src="imagens-dashboard/desktop.png" alt="">
+                </div>
+
+                <div id="informacoes">
+                    <p>Nome da máquina:Digital01</p>
+                    <p>Status: Desligada<i class="material-icons of">power_settings_new</i></p>
+                </div>
+                <div class="botaoVermais" onclick="abreModal()"><i class="material-icons buttonSeeMore">poll</i>Ver mais
+                </div>
+            </div>
+            <div class="Computador">
+                <div id="fotoMaquina">
+                    <img src="imagens-dashboard/desktop.png" alt="">
+                    <i class="material-icons dangerIcon">warning</i>
+                </div>
+
+                <div id="informacoes">
+                    <p>Nome da máquina:Digital01</p>
+                    <p>Status: Ligada<i class="material-icons On_of">power_settings_new</i></p>
+                </div>
+                <div class="botaoVermais" onclick="abreModal()"><i class="material-icons buttonSeeMore">poll</i>Ver mais
+                </div>
+            </div>
+            <div class="Computador">
+                <div id="fotoMaquina">
+                    <img src="imagens-dashboard/desktop.png" alt="">
+                </div>
+
+                <div id="informacoes">
+                    <p>Nome da máquina:Digital01</p>
+                    <p>Status: Ligada<i class="material-icons On_of">power_settings_new</i></p>
+                </div>
+                <div class="botaoVermais" onclick="abreModal()"><i class="material-icons buttonSeeMore">poll</i>Ver mais
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div id="AreaModal" class="ModalEscondido" onclick="abreModal()">
+
+        <div id="modal">
+
+
+
+            <div class="InfoMaquina">
+                <div class="partesuperiorModal">
+                    <h1>Informações</h1>
+                </div>
+                <div class="Descricao">
+                    <p>Nome da máquina: hlgDigitalHost
+
+                    </p>
+                    <p>
+                        Sistema Operacional: Ubuntu
+                    </p>
+
+                    <p>
+                        Diagnóstico: Alta temperatura da cpu
+                    </p>
+                </div>
+
+
+            </div>
+
+            <div class="AreaGrafico">
+                <div class="partesuperiorModal">
+                    <h1>Dados em tempo real</h1>
+                    <button id="fecharModal">
+                        <span class="material-icons">
+                            close
+                        </span>
+                    </button>
+                </div>
+                <canvas id="GraficoPc">
+
+                </canvas>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="js-dashboard/modal.js"></script>
+<script src="js-dashboard/MedidasComputadores.js"></script>
+
+</html>

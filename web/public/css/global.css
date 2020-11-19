@@ -1,0 +1,476 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#tituloPagina{
+    color: #035151;
+    margin-left: -90px;
+}
+
+#cabecalho{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    position: fixed;
+    background: white;
+    /* background: linear-gradient(rgba(29, 127, 149, 0.589), rgba(29, 127, 149, 0.24)); */
+
+    box-shadow: 0 15px 20px 0 rgba(88,91,96,.1);
+    z-index: 99999999999999999999999999;
+}
+
+#home{
+    padding-top: 150px;
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    
+
+    
+}
+
+#menu img{
+    height: 70px;
+    width: 70px;
+}
+.container #containerMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    background: #035151;
+    height: 200px;
+    display: flex;
+    width: 100%;
+    
+}
+
+footer #direito{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+footer #direito p{
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+}
+#formulario{
+    overflow: hidden;
+    margin: 20px 0;
+    background: white;
+    
+
+}
+
+#formulario input{
+    box-sizing: border-box;
+    padding: 6px;
+    height: 40px;
+    outline: none;
+    border: none;
+   
+}
+
+#formulario button{
+    height: 40px;
+    width: 130px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: #1D9595;
+   
+}
+
+footer #esquerdo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+footer #esquerdo p{
+    font-weight: 100;
+    color: white;
+    font-size: 18px;
+}
+
+
+#iconesSocial{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.iconeRede{
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    background:white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+
+.iconeRede img{
+    width: 70%;
+}
+
+
+#menu{
+  
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999999999;
+    background: white;
+}
+
+#menuIcone{
+    display: none;
+}
+
+.itemMenu ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 20px;
+    
+}
+
+.itemMenu ul li a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#AcessarMenu{
+    display: none;
+}
+
+#contato{
+    color: #1D7F95 !important;
+}
+
+.itemMenu ul li a::before{
+    content: " ";
+    height: 2px;
+    background:#1D7F95;
+    position: absolute;
+    bottom: -2px;
+    transition: all 0.3s;
+    width: 0;
+}
+
+.itemMenu ul li a:hover::before{
+    width: 100%;
+}
+
+#Acessar{
+    background:#1D9595;
+    padding: 10px 15px;
+    border-radius: 5px;
+    list-style: none;
+    cursor: pointer;
+       
+    
+}
+
+#Acessar a{
+    color: white;
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-sizing: border-box;
+    padding-top: 50px;
+    background: linear-gradient(white 70%,rgb(163, 155, 155));
+}
+
+#AreaHome{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    
+}
+
+#AreaHome a {
+    text-decoration: none;
+    color:#035151;
+}
+
+#TextoArea{
+    background-color: #1D7F95;
+    box-sizing: border-box;
+    padding: 35px 0;
+}
+
+#TextoArea h1{
+    font-size: 50px;
+    width: 370px;
+    font-weight: 100;
+}
+
+#TextoArea h3{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+
+
+#ImgArea img{
+    max-width: 100%;
+    width: 500px;
+    animation: animaHome 5.9s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes animaHome{
+    0%,100% {
+       
+        transform: translatey(0px);
+    }
+    50% {
+       
+        transform: translatey(-20px);
+    }
+    }
+
+#btnVerMais{
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 35px;
+    font-size: 15px;
+    transition: all 0.3s;
+    width: 130px;
+}
+
+#btnVerMais:hover{
+    width: 144px;
+    cursor: pointer;
+
+}
+
+
+
+.ItemArea{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#AreaSobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    }
+
+    #QuadradoSobre{
+        width: 50%;
+        height: 100%;
+     
+     
+    }
+
+    #caixaTextoSobre{
+        height: 70%;
+        width: 100%;
+        margin-top: 60px;
+        background:#1D9595;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+
+        
+        padding:50px 30px;
+    }
+
+    #TituloSobre{
+        width: 100%;
+         text-align:center;
+         font-size: 35px;
+         font-weight: 100; 
+    }
+
+    #caixaTextoSobre button{
+        font-size: 16px;
+        border: none;
+        width: 130px;
+        border-radius: 20px;
+        padding: 7px 35px;
+        font-size: 15px;
+        transition: all 0.3s;
+    }
+
+    #caixaTextoSobre button:hover{
+        width: 144px;
+        cursor: pointer;
+        
+    
+    }
+
+    #ImgSobre{
+        width: 50%;
+        height: 100%;
+        
+
+    }
+
+    #ImgSobre img{
+        height: 70%;
+        width: 100%;
+        
+        object-fit: cover;
+        animation: animaHome 5.9s ease-in-out infinite;
+    
+
+    }
+
+    #ImgSobre h1{
+        letter-spacing: 1.1px;
+    }
+
+
+    #corpoServicos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #tituloServicos{
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        align-items: center;
+        flex-direction: column;
+        color: #1D7F95;
+        height: 50%;
+        width: 100%;
+        background: rgba(60, 126, 177, 0.116);
+        padding: 15px;
+        box-sizing: border-box;
+
+    }
+
+    #tituloServicos h1{
+        font-weight: 100;
+        font-size: 45px;
+    }
+
+    #tituloServicos h3{
+        font-weight: 100;
+        font-size: 25px;
+    }
+
+    #divServicos{
+        height: 50%;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        align-content: flex-end;
+
+    }
+
+    .caixasServicos{
+        min-height: 84%;
+        width: 23%;
+        margin: 20px;
+        border: solid #3978A7 1px;
+        border-radius: 2px;
+        transition: all 0.5s;
+        cursor: pointer;
+        
+    }
+
+    .caixasServicos:hover{
+        box-shadow:0 15px 20px 0 rgba(88,91,96,.1);
+        transform: scale(1.1);
+    }
+
+    .caixasServicos .imagemServico{
+        padding: 3px;
+        height: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagemServico img{
+        position: relative;
+        object-fit: cover;
+        width: 70%;
+        height: 100%;
+    }
+
+.textoCaixa{
+    height: 40%;
+    width: 100%;
+    background: #1D9595;
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+}
+
+.textoCaixa h1{
+    font-weight: 100;
+    color: white;
+    font-size:18px;
+}
+
+.textoCaixa h3{
+    font-weight: 100;
+    color: white;
+    font-size:16px;
+}
+    
+
+
+

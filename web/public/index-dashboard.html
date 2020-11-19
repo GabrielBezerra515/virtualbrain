@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css-dashboard/style.css">
+    <link rel="shortcut icon" href="imagens-dashboard/nl_padrao.png" type="image/x-icon">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <nav>
+        <div id="menu">
+            <div id="logo">
+                <img src="imagens-dashboard/nl_branco_dg_cinza.png" alt="">
+            </div>
+
+            <div id="itensMenu">
+                <ul>
+                    <li>
+                        <i class="material-icons icon_nav">dashboard</i>
+                        Dashboard</li>
+
+                    
+                    <li><i class="material-icons icon_nav">computer</i> <a href="/maquinas">Máquinas
+                    </a>
+                        </li>
+                
+                    <!-- <li><i class="material-icons icon_nav">settings</i>Configurações</li> -->
+                    <li><i class="material-icons icon_nav">logout</i><a href="/login">Sair</a>  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="AreaPrincipalDash">
+        <div id="AreaSuperiorDash">
+            <div>
+                <p id="TituloDash">DashBoard</p>
+            </div>
+            <p>
+                <select name="Grupo" id="selecionaSetor">
+                    <option value="">Grupo 1</option>
+                    <option value="">Grupo 2</option>
+                </select>
+            </p>
+
+           
+
+
+        </div>
+
+        <div id="AreaMeioDash">
+            <div class="graficosCima">
+                <div class="elementosCima">
+                     <div class="iconeElemento" id="card1">
+                         <i class="material-icons icon_1graph">done_outline</i>
+                     </div>
+                     <div class="Informacao">
+                         <p>Máquinas registradas</p>
+                         <span class="NumeroInfo">4</span>
+                     </div>
+                </div>
+                <div class="elementosCima">
+                     <div class="iconeElemento" id="card2">
+                         <i class="material-icons icon_1graph">warning</i>
+                     </div>
+                     <div class="Informacao">
+                         <p>Máquinas com problemas</p>
+                            <span class="NumeroInfo">1</span>
+                     </div>
+                </div>
+                <div class="elementosCima">
+                     <div class="iconeElemento" id="card3">
+                         <i class="material-icons icon_1graph">feedback</i>
+                     </div>
+                     <div class="Informacao">
+                         <p>Problemas na semana</p>
+                         <span class="NumeroInfo">5</span>
+                     </div>
+                </div>
+
+                <div class="elementosCima">
+                     <div class="iconeElemento" id="card4">
+                         <i class="material-icons icon_1graph">power_settings_new</i>
+                     </div>
+                     <div class="Informacao">
+                         <p>Máquinas ligadas</p>
+                         <span class="NumeroInfo">3</span>
+                         
+                     </div>                    
+                </div>
+            </div>
+
+            <div class="GraficoPizzacima">
+                <p>Softwares mais utilizados</p>
+                <canvas id="myChart2">
+
+                </canvas>
+            </div>
+        </div>
+
+        <div id="AreaBaixoDash">
+            <div id="Grafico3" class="graficosBaixo">
+                <p>Descrição dos problemas</p>
+                <canvas id="myChart3"></canvas>
+            </div>
+
+            <div id="Grafico4">
+                <p>Taxa de uso por período</p>
+                <div id="caixaCanvas">
+                <canvas id="myChart4"></canvas>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script src="js-dashboard/grafico1.js"></script>
+    <script src="js-dashboard/grafico2.js"></script>
+    <script src="js-dashboard/grafico3.js"></script>
+    <script src="js-dashboard/grafico4.js"></script>
+
+
+</body>
+
+</html>
